@@ -364,7 +364,7 @@ if st.button("Generate DOCX"):
 
     safe_name = patient_name.replace(" ", "_")
 
-    output_file = f"generated/{safe_name}_{timestamp}.docx"
+    output_file = f"{safe_name}_{timestamp}.docx"
 
     doc.save(output_file)
     st.success("Discharge Summary Generated Successfully!")
